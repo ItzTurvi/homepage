@@ -49,6 +49,27 @@
       box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     }
 
+    /* ===== VIDEO SECTION ===== */
+    .video {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .video h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 2em;
+      color: #1b1464;
+      margin-bottom: 20px;
+    }
+
+    .video iframe {
+      width: 80%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
     .back-button {
       display: inline-block;
       margin: 60px auto 80px auto;
@@ -82,12 +103,20 @@
       header h1 {
         font-size: 2.4em;
       }
+
+      .video iframe {
+        height: 300px;
+      }
     }
 
     @media screen and (max-width: 480px) {
       .gallery img {
         width: 140px;
         height: 140px;
+      }
+
+      .video iframe {
+        height: 250px;
       }
     }
   </style>
@@ -100,21 +129,25 @@
   </header>
 
   <section class="gallery">
-    <img src="https://itzturvi.github.io/homepage/images/pjsk1.jpg" alt="Project Sekai 1">
-    <img src="https://itzturvi.github.io/homepage/images/pjsk2.jpg" alt="Project Sekai 2">
-    <img src="https://itzturvi.github.io/homepage/images/pjsk3.jpg" alt="Project Sekai 3">
-    <img src="https://itzturvi.github.io/homepage/images/pjsk4.jpg" alt="Project Sekai 4">
-    <img src="https://itzturvi.github.io/homepage/images/pjsk5.jpg" alt="Project Sekai 5">
+    <img src="https://itzturvi.github.io/homepage/images/pjsk1.jpg" alt="pjsk1">
+    <img src="https://itzturvi.github.io/homepage/images/pjsk2.jpg" alt="pjsk2">
+    <img src="https://itzturvi.github.io/homepage/images/pjsk3.jpg" alt="pjsk3">
+    <img src="https://itzturvi.github.io/homepage/images/pjsk4.jpg" alt="pjsk4">
+    <img src="https://itzturvi.github.io/homepage/images/pjsk5.jpg" alt="pjsk5">
   </section>
 
-<iframe data-testid="embed-iframe" 
-    src="https://open.spotify.com/embed/track/0096wJntoqxtkmSXMn55Pr?utm_source=generator" 
-    width="100%" height="352" frameBorder="0" 
-    allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    loading="lazy">
-  </iframe>
+  <!-- ===== VIDEO SECTION ===== -->
+  <section class="video">
+    <h2>Simple Mafuyu Edit</h2>
+    <iframe 
+      src="https://youtu.be/aqA9uAKX5WI?si=WmU_dRcj7TgBHyXO" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </section>
 
-  
   <div style="text-align:center;">
     <a href="index.html" class="back-button">← Back to Home</a>
   </div>
@@ -125,4 +158,3 @@
 
 </body>
 </html>
-
