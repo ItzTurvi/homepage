@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xia | Wuthering Waves</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #047f8c; /* deep turquoise background */
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px 20px;
+    }
+
+    header h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 3em;
+      margin: 0;
+      color: #ffffff;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 60px auto 80px auto;
+      padding: 12px 25px;
+      background-color: #ffffff;
+      color: #047f8c;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #7ef5ff;
+      color: #0f4b50;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      color: #e0f7f9;
+      font-size: 0.9em;
+    }
+
+    @media screen and (max-width: 768px) {
+      .gallery img {
+        width: 180px;
+        height: 180px;
+      }
+
+      header h1 {
+        font-size: 2.4em;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .gallery img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Wuthering Waves 🌊</h1>
+  </header>
+
+  <section class="gallery">
+    <img src="https://itzturvi.github.io/homepage/images/wuwa1.jpg" alt="wuwa1">
+    <img src="https://itzturvi.github.io/homepage/images/wuwa2.jpg" alt="wuwa2">
+    <img src="https://itzturvi.github.io/homepage/images/wuwa3.jpg" alt="wuwa3">
+    <img src="https://itzturvi.github.io/homepage/images/wuwa4.jpg" alt="wuwa4">
+    <img src="https://itzturvi.github.io/homepage/images/wuwa5.jpg" alt="wuwa5">
+  </section>
+
+  <div style="text-align:center;">
+    <a href="index.html" class="back-button">← Back to Home</a>
+  </div>
+
+  <footer>
+    © 2025 Xia | Designed with 💙
+  </footer>
+
+</body>
+</html>
 
