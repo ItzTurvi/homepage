@@ -15,18 +15,17 @@
       overflow-x: hidden;
     }
 
-    /* ===== YOUR ORIGINAL IMAGE CONTAINER ===== */
+    /* ===== IMAGE CONTAINER (NO CROP) ===== */
     .image-container {
       width: 100%;
-      height: 400px;
+      height: auto;             /* let image size naturally */
       border: 1px solid black;
+      overflow: hidden;
     }
 
     .image-container img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      float: left;
+      height: auto;             /* maintain full aspect ratio */
       display: block;
     }
 
@@ -105,10 +104,6 @@
 
     /* ===== RESPONSIVE FIXES ===== */
     @media screen and (max-width: 768px) {
-      .image-container {
-        height: 250px;
-      }
-
       .hobbies h2 {
         font-size: 2.2em;
       }
@@ -124,10 +119,6 @@
     }
 
     @media screen and (max-width: 480px) {
-      .image-container {
-        height: 200px;
-      }
-
       .hobby-item img {
         width: 130px;
         height: 130px;
